@@ -147,9 +147,20 @@
 
   <!-- INICIO -->
   <div id="screen-start">
-    <h1 id="test-title">Test</h1>
-    <p id="test-description">Responde las preguntas lo mejor que puedas.</p>
+    <h1 id="test-title">Test Licencia de Armas</h1>
+    <p id="test-description">Selecciona el tema y responde 20 preguntas aleatorias.</p>
+
+    <div style="margin-bottom:1.5rem;">
+      <label for="tema-select" style="display:block;font-weight:600;margin-bottom:.5rem;color:#2d3748;">Tema:</label>
+      <select id="tema-select" style="width:100%;padding:.65rem 1rem;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;color:#2d3748;background:#f7fafc;">
+        <option value="all">Todos los temas</option>
+        <option value="tema-1.json">Tema 1 – Armas (Licencia E y D)</option>
+        <option value="tema-2.json">Tema 2 – Reglamento de Armas</option>
+      </select>
+    </div>
+
     <button class="btn" onclick="startTest()">Comenzar</button>
+    <p id="load-error" style="color:#e53e3e;margin-top:1rem;display:none;"></p>
   </div>
 
   <!-- PREGUNTAS -->
@@ -177,24 +188,15 @@
 
 <script>
 // ════════════════════════════════════════════════
-//  CONFIGURACIÓN DEL TEST  –  edita aquí
+//  CONFIGURACIÓN
 // ════════════════════════════════════════════════
 const CONFIG = {
-  title: "Test",
-  description: "Responde las preguntas lo mejor que puedas.",
-  shuffleQuestions: false,   // true = orden aleatorio
-  shuffleOptions: false,     // true = opciones en orden aleatorio
+  numQuestions: 20,      // preguntas por test
+  shuffleOptions: true,  // barajar opciones
 };
 
-// Formato de cada pregunta:
-// {
-//   q: "Texto de la pregunta",
-//   options: ["Opción A", "Opción B", "Opción C", "Opción D"],
-//   answer: 0   // índice de la respuesta correcta (0 = primera opción)
-// }
-const QUESTIONS = [
-  // Las preguntas se añadirán aquí
-];
+const JSON_FILES = ['tema-1.json', 'tema-2.json'];
+
 // ════════════════════════════════════════════════
 
 let current = 0;
@@ -207,19 +209,72 @@ function shuffle(arr) {
   return [...arr].sort(() => Math.random() - .5);
 }
 
-function startTest() {
-  document.getElementById('test-title').textContent       = CONFIG.title;
-  document.getElementById('test-description').textContent = CONFIG.description;
+// Extrae todas las preguntas con answer != null de un objeto JSON de tema
+function extractQuestions(data) {
+  const questions = [];
+  for (const temaKey of Object.keys(data)) {
+    const temaData = data[temaKey];
+    for (const subtopic of Object.keys(temaData)) {
+      for (const q of temaData[subtopic]) {
+        if (q.answer !== null && q.answer !== undefined) {
+          questions.push(q);
+        }
+      }
+    }
+  }
+  return questions;
+}
 
-  activeQuestions = CONFIG.shuffleQuestions ? shuffle(QUESTIONS) : [...QUESTIONS];
-  // Guardar índice de respuesta correcta tras posible shuffle de opciones
-  activeQuestions = activeQuestions.map(q => {
-    if (!CONFIG.shuffleOptions) return q;
-    const correctText = q.options[q.answer];
-    const opts = shuffle(q.options);
-    return { q: q.q, options: opts, answer: opts.indexOf(correctText) };
-  });
+async function loadQuestions(files) {
+  let all = [];
+  for (const file of files) {
+    try {
+      const res = await fetch(file);
+      if (!res.ok) throw new Error(`No se pudo cargar ${file}`);
+      const data = await res.json();
+      all = all.concat(extractQuestions(data));
+    } catch(e) {
+      console.warn(e);
+    }
+  }
+  return all;
+}
 
+async function startTest() {
+  const select = document.getElementById('tema-select');
+  const errEl  = document.getElementById('load-error');
+  errEl.style.display = 'none';
+
+  const files = select.value === 'all' ? JSON_FILES : [select.value];
+
+  let pool;
+  try {
+    pool = await loadQuestions(files);
+  } catch(e) {
+    errEl.textContent = 'Error al cargar las preguntas. Asegúrate de servir el proyecto con un servidor local.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  if (pool.length === 0) {
+    errEl.textContent = 'No hay preguntas disponibles con respuesta correcta definida en los JSON seleccionados.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  const n = Math.min(CONFIG.numQuestions, pool.length);
+  let selected = shuffle(pool).slice(0, n);
+
+  // Barajar opciones si está activado, actualizando el índice de answer
+  if (CONFIG.shuffleOptions) {
+    selected = selected.map(q => {
+      const correctText = q.options[q.answer];
+      const opts = shuffle(q.options);
+      return { q: q.q, options: opts, answer: opts.indexOf(correctText) };
+    });
+  }
+
+  activeQuestions = selected;
   current = 0; score = 0; userAnswers = [];
   show('screen-quiz');
   renderQuestion();
@@ -304,7 +359,6 @@ function showResult() {
   else msg = 'Necesitas estudiar más. ¡Ánimo!';
   document.getElementById('result-msg').textContent = msg;
 
-  // Revisión de respuestas
   const reviewEl = document.getElementById('review');
   reviewEl.innerHTML = '<h3>Revisión de respuestas</h3>';
   userAnswers.forEach((a, i) => {
@@ -330,17 +384,6 @@ function show(id) {
     document.getElementById(s).classList.toggle('hidden', s !== id);
   });
 }
-
-// Aplica título/descripción al cargar
-window.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('test-title').textContent       = CONFIG.title;
-  document.getElementById('test-description').textContent = CONFIG.description;
-  document.title = CONFIG.title;
-  if (QUESTIONS.length === 0) {
-    document.querySelector('#screen-start p').textContent =
-      '⚠️ Aún no hay preguntas cargadas. Pásalas para completar el test.';
-  }
-});
 </script>
 </body>
 </html>
