@@ -1,0 +1,165 @@
+{
+  "tema-1": {
+    "Definición de todos los tipos de armas amparadas con Licencia de Armas E y D": [
+      {
+        "q": "El arma de fuego que se recarga automáticamente, después de cada disparo, efectuando varios disparos sucesivos accionando el disparador una sola vez, se denomina:",
+        "options": [
+          "Arma de fuego semiautomática.",
+          "Arma de fuego de repetición.",
+          "Arma de fuego automática."
+        ],
+        "answer": 2
+      },
+      {
+        "q": "El arma de fuego que después de cada disparo, se recarga automáticamente y solo es posible efectuar un disparo al accionar el disparador cada vez, se denomina:",
+        "options": [
+          "Arma de fuego semiautomática.",
+          "Arma de fuego de repetición.",
+          "Arma de fuego automática."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Si el arma de fuego se recarga después de cada disparo, mediante un mecanismo accionado por el tirador, estaremos ante:",
+        "options": [
+          "Arma de fuego semiautomática.",
+          "Arma de fuego de repetición.",
+          "Arma de fuego automática."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "¿Cómo se denomina el arma de fuego sin depósito de municiones, que se carga antes de cada disparo mediante la introducción manual de un cartucho en la recámara?",
+        "options": [
+          "Arma de un solo tiro.",
+          "Arma de fuego automática.",
+          "Arma de fuego semiautomática."
+        ],
+        "answer": 0
+      }
+    ],
+
+    "-Partes o grupos principales (Conjuntos) de las armas amparadas con Licencia de Armas “E” y “D”": [
+      {
+        "q": "¿Qué elemento de un arma de fuego conduce y estabiliza el proyectil?",
+        "options": [
+          "El disparador.",
+          "El cañón.",
+          "El estabilizador."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "La culata de un arma sirve para:",
+        "options": [
+          "Instalar en ella el punto de mira.",
+          "Apoyar el arma sobre el hombro para efectuar el disparo.",
+          "Las armas no tienen culata."
+        ],
+        "answer": 1
+      }
+    ],
+
+    "Como se cargan y descargan (alimentan) las armas": [
+      {
+        "q": "¿Cuándo decimos que una arma está montada?",
+        "options": [
+          "Cuando está preparada para hacer fuego.",
+          "Que está totalmente ensamblada.",
+          "Ser portada por el tirador."
+        ],
+        "answer": null
+      },
+      {
+        "q": "Arma alimentada es aquella que:",
+        "options": [
+          "Tiene la munición alojada en el mecanismo de alimentación.",
+          "Ya ha efectuado el disparo.",
+          "No tiene munición en el mecanismo de alimentación."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Como se hacen disparar las armas": [
+      {
+        "q": "¿Con qué elementos cuenta un arma para enfilarla hacia un blanco?",
+        "options": [
+          "A través del mecanismo de puntería.",
+          "Con un buen empuñamiento.",
+          "Con una buena sujeción del arma."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Piezas fundamentales según Reglamento de Armas": [
+      {
+        "q": "¿El cañón de una escopeta es considerada por el Reglamento de Armas como pieza fundamental del arma?",
+        "options": [
+          "Sí.",
+          "No.",
+          "Depende de su estructura."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Funcionamiento del mecanismo de disparo": [
+      {
+        "q": "¿Para qué sirve el seguro manual?",
+        "options": [
+          "Para evitar el disparo, aun estando el arma montada.",
+          "Para que no se caiga el cargador accidentalmente.",
+          "Para asegurar el blanco y efectuar un disparo certero."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Funcionamiento del mecanismo de seguridad": [
+      {
+        "q": "El mecanismo de seguridad de un arma, ¿qué misión tiene?",
+        "options": [
+          "Evitar que se produzca un disparo involuntario.",
+          "Evitar que se cargue el arma.",
+          "Evitar que se descargue el arma."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Conservación y limpieza de las armas": [
+      {
+        "q": "¿Cómo se denomina la varilla que se utiliza para limpiar el interior del cañón?",
+        "options": [
+          "Escobilla.",
+          "Baqueta.",
+          "Plumero."
+        ],
+        "answer": null
+      }
+    ],
+
+    "Medidas de seguridad en la tenencia y transporte": [
+      {
+        "q": "¿Cómo deberá transportarse un arma de fuego en un vehículo?",
+        "options": [
+          "Cargadas.",
+          "Dispuestas para disparar si estamos en época hábil.",
+          "Descargadas."
+        ],
+        "answer": null
+      },
+      {
+        "q": "¿Qué medidas deben adoptarse al manejar un arma?",
+        "options": [
+          "Como si estuviera siempre cargada.",
+          "Con el seguro puesto.",
+          "Como si estuviera descargada."
+        ],
+        "answer": null
+      }
+    ]
+  }
+}
