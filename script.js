@@ -4,7 +4,7 @@
 const CONFIG = {
   numQuestions: 20,      // preguntas por test
   shuffleOptions: true,  // barajar opciones
-  maxErrors: 3,          // fallos máximos antes de reprobar
+  maxErrors: 4,          // fallos máximos antes de reprobar
 };
 
 const JSON_FILES = ['tema-1.json', 'tema-2.json'];
