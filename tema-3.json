@@ -1,0 +1,24 @@
+{
+  "tema-2": {
+    "Guías de Circulación.": [
+        {
+            "q": "¿Cómo se denomina el documento que ampara el traslado, sin licencia ni guía de pertenencia, entre dos lugares, de armas de las categorías 2a y 3a?",
+            "options": [
+                "Guía de Circulación",
+                "Guía de Transporte",
+                "Albarán de circulación"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "Cuando un particular adquiera una escopeta en localidad distinta a la de su residencia, ¿quien expedirá la Guía de Circulación?.",
+            "options": [
+                "La Intervención de Armas de su residencia",
+                "La Intervención de Armas del lugar de la compra",
+                "Las dos anteriores pueden ser válidas."
+            ],
+            "answer": 1
+        }
+    ]
+  }
+}
