@@ -261,6 +261,358 @@
           "answer": 1
         }
       ]
+    },
+    "REVISTA DE ARMAS.": {
+      "La obligatoriedad de la revista de armas, cuando se debe pasar y ante quien.": [
+        {
+          "q": "¿Es cierto que el Reglamento de Armas dispone que las armas de las categorías 1ª y todas las de concurso, pasarán revista cada tres años y las demás armas que precisen guía, cada cinco años?",
+          "options": [
+              "Cierto.",
+              "Falso.",
+              "Solo en las de 2ª categoría."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cada cuántos años pasan revista las armas de la 2ª categoría?",
+          "options": [
+              "Dos años.",
+              "Cinco años.",
+              "Todos los años."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cada cuántos años pasan revista las armas de la 3ª categoría?",
+          "options": [
+              "Cinco años.",
+              "Nunca.",
+              "Tres años."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Es necesario presentar el arma para pasar revista?",
+          "options": [
+              "Si.",
+              "No.",
+              "Alguna vez."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "El hecho de no pasar dos revistas del arma, ¿es causa de anulación y retirada de la guía de pertenencia?",
+          "options": [
+              "No.",
+              "Si.",
+              "Depende del valor histórico del arma."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿En qué mes pasará revista el titular de una guía de pertenencia de una escopeta?",
+          "options": [
+              "En el mes que se abre la veda de caza.",
+              "En el mes de abril.",
+              "En el mes correspondiente a la renovación de la licencia."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué necesita un familiar, con licencia de armas, de un titular de un arma para pasar la revista de las mismas?",
+          "options": [
+              "Demostrar la relación de parentesco con el titular del arma.",
+              "Autorización escrita del titular del arma.",
+              "Autorización escrita del Delegado/a del Gobierno de la Comunidad."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "No pasar dos revistas consecutivas, dará lugar a la anulación y retirada de la Guía de Pertenencia, ¿a qué dará lugar también?",
+          "options": [
+              "La pérdida de la propiedad del arma.",
+              "A la apertura de un expediente sancionador.",
+              "No poder cazar en el transcurso de un año."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Quién realizará las anotaciones correspondientes al pasar la Revista de Armas?:",
+          "options": [
+              "La persona afectada.",
+              "El/La Interventor/a de Armas.",
+              "El/La Jefe de la Comandancia de la Guardia Civil."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Qué requisito es imprescindible para pasar la Revista de Armas?:",
+          "options": [
+              "La presentación del Arma.",
+              "Tiene que ser pasada por el/la titular del Arma.",
+              "Las respuestas a) y b) son ciertas."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "El hecho de no pasar la revista de armas constituye:",
+          "options": [
+              "Una infracción Administrativa.",
+              "Un Delito.",
+              "Una falta penal."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Si tengo una escopeta de caza, ¿cada cuánto tiempo tengo que pasar revista?",
+          "options": [
+              "Cada año.",
+              "Cada tres años.",
+              "Cada cinco años."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Cada cuánto tiempo pasarán revista las armas de concurso?",
+          "options": [
+              "Cada tres años.",
+              "Cada cinco años.",
+              "En cada concurso."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cada cuánto tiempo pasarán revista las ballestas?",
+          "options": [
+              "Las ballestas no pasan revista, por no ser armas de fuego.",
+              "Cada tres años.",
+              "Cada cinco años como las escopetas."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Puede un tercero, con licencia de armas, pasar revista de una escopeta?",
+          "options": [
+              "No, tiene que ser personalmente el titular.",
+              "Sí, si lo autorizó el/la titular por escrito.",
+              "Sí, aprovechando la revista de las suyas, sin más trámite."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Una carabina de aire comprimido de la 4ª categoría. ¿cuándo tiene que pasar la revista?",
+          "options": [
+              "Cada cinco años.",
+              "Cada tres años.",
+              "No tiene que pasar revista."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿En qué circunstancias se puede pasar revista de armas sin presentarla en la Intervención de Armas o Puesto de la Guardia Civil?",
+          "options": [
+              "En caso de enfermedad.",
+              "Cuando sea de nueva adquisición.",
+              "En ningún caso."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Un cañón estriado, y con recámara para cartuchos metálicos, adaptable a una escopeta de caza, pasará revista de armas a los:",
+          "options": [
+              "5 años.",
+              "3 años.",
+              "No pasa revista."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Una carabina de repetición accionada por gas comprimido, no asimilada a escopeta, pasará revista de armas cada:",
+          "options": [
+              "3 años.",
+              "5 años.",
+              "No necesita pasar revista."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Una carabina de aire comprimido, cuyo proyectil en boca tiene una energía superior a los 24,2 julios, ¿ha de pasar revista de armas?",
+          "options": [
+              "Si.",
+              "No.",
+              "Sólo si se usa para cazar."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "TRANSFERENCIAS DE ARMAS": {
+      "Cambio de titularidad.": [
+        {
+          "q": "¿Es cierto que el particular que desee enajenar un arma tiene que hacer la cesión a persona que posea la licencia, tarjeta o certificado de inutilización correspondiente?",
+          "options": [
+              "Sí, siempre que sea necesario con arreglo a lo dispuesto en el Reglamento de Armas.",
+              "Puede enajenarse a cualquiera.",
+              "Las armas de fuego no pueden enajenarse."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Al enajenar un particular un arma de fuego, ¿donde entregará la guía de pertenencia?",
+          "options": [
+              "Al adquirente.",
+              "En la Intervención de Armas.",
+              "En el Ayuntamiento."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Debe comunicarse a la Intervención de Armas la enajenación de un arma?",
+          "options": [
+              "Siempre.",
+              "Nunca.",
+              "Únicamente las armas cortas."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿En qué caso no es necesario participar a la Intervención de Armas la enajenación de un arma?",
+          "options": [
+              "Se participa siempre.",
+              "Cuando se enajena a una armería.",
+              "Cuando se regala a alguien, sin mediar precio."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué requisito es indispensable que tenga el comprador de un arma de fuego?",
+          "options": [
+              "Que se halle en posesión de la licencia para el arma que pretende adquirir.",
+              "Que tenga licencia de caza y seguro del cazador.",
+              "No es necesario requisito alguno."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "La enajenación de un arma entre particulares, ¿qué nuevo documento le será expedido al comprador?",
+          "options": [
+              "Recibo de compra-venta.",
+              "Entrega del arma al nuevo titular con su guía de pertenencia.",
+              "Expedición de nueva guía de pertenencia."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "La venta de un arma de fuego se efectuará siempre con conocimiento de:",
+          "options": [
+              "Comisaría de Policía.",
+              "Dirección General de la Guardia Civil.",
+              "Intervención de Armas correspondiente."
+          ],
+          "answer": 2
+        }
+      ],
+      "Cesión temporal de armas.": [
+        {
+          "q": "¿Es cierto que los extranjeros residentes en España podrían prestar sus armas de caza a quienes estén provistos de licencia de caza y de licencia de arma larga rayada para caza mayor o escopetas?",
+          "options": [
+              "Cierto.",
+              "Solo las escopetas.",
+              "Los/Las extranjeros/as residentes no pueden prestar sus armas."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué requisitos debe cumplir una persona para que se le pueda ceder el arma?",
+          "options": [
+              "Ser propietario/a de un coto de caza.",
+              "Poseer la correspondiente licencia de armas.",
+              "Tener aficiones cinegéticas."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Por cuánto tiempo se puede prestar las armas para cazar?",
+          "options": [
+              "Mientras sea titular de un coto de caza.",
+              "Un mes.",
+              "Quince días como máximo."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Cómo se debe hacer la cesión temporal de las armas?",
+          "options": [
+              "Por escrito, fechado y firmado.",
+              "De palabra.",
+              "Por teléfono."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Una persona con nacionalidad español/a, ¿a quien podrá prestar su escopeta?",
+          "options": [
+              "A quien tenga licencia de caza.",
+              "No puede prestarla.",
+              "A quienes estén provistos de la licencia de armas correspondiente y de licencia de caza."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "El/La titular de un arma larga rayada para caza mayor ¿a quien podrá prestar dicha arma?",
+          "options": [
+              "A nadie.",
+              "A quienes estén provistos de la licencia de armas correspondiente y de licencia de caza.",
+              "A quien esté provisto de licencia de caza."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Es cierto que las armas de caza podrán prestarse a quienes estén provistos de licencia de caza y de licencia de armas largas rayadas para caza mayor o escopeta correspondiente?",
+          "options": [
+              "Cierto.",
+              "En ningún caso.",
+              "Depende de la Comunidad Autónoma."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo se prestarán siempre las escopetas?",
+          "options": [
+              "Con sus guías de pertenencia.",
+              "Con la licencia de caza.",
+              "Con la guía de circulación."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo se prestarán siempre las armas de caza?",
+          "options": [
+              "Con sus guías de pertenencia.",
+              "No se pueden prestar.",
+              "Con sus fundas."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Se podrán prestar las armas de caza a quien no esté provisto de licencia de caza?",
+          "options": [
+              "Sí, si quien la va a utilizar dispone de finca particular para el ejercicio de la caza.",
+              "No.",
+              "Sí, por no ser requisito fundamental."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Qué requisito es necesario acreditar para obtener la guía de pertenencia de un arma?",
+          "options": [
+              "Que cumple con las medidas de seguridad impuestas en la custodia de la misma.",
+              "Que no ha tenido ningún incidente en el uso de las armas.",
+              "Que no ha extraviado en ninguna ocasión la guía de pertenencia."
+          ],
+          "answer": 0
+        }
+      ]
     }
   }
 }
