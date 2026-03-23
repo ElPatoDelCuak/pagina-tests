@@ -25,12 +25,31 @@ function shuffle(arr) {
 
 function extractQuestions(data) {
   const questions = [];
+
+  const pushValidQuestions = (arr) => {
+    for (const q of arr) {
+      if (q && q.answer !== null && q.answer !== undefined) {
+        questions.push(q);
+      }
+    }
+  };
+
   for (const temaKey of Object.keys(data)) {
     const temaData = data[temaKey];
-    for (const subtopic of Object.keys(temaData)) {
-      for (const q of temaData[subtopic]) {
-        if (q.answer !== null && q.answer !== undefined) {
-          questions.push(q);
+    for (const subtemaKey of Object.keys(temaData)) {
+      const subtemaData = temaData[subtemaKey];
+
+      // Formato sin apartado: subtema -> [preguntas]
+      if (Array.isArray(subtemaData)) {
+        pushValidQuestions(subtemaData);
+        continue;
+      }
+
+      // Formato con apartado: subtema -> apartado -> [preguntas]
+      for (const apartadoKey of Object.keys(subtemaData)) {
+        const apartadoQuestions = subtemaData[apartadoKey];
+        if (Array.isArray(apartadoQuestions)) {
+          pushValidQuestions(apartadoQuestions);
         }
       }
     }
@@ -281,6 +300,23 @@ async function renderTheory() {
   const files = select.value === 'all' ? JSON_FILES : [select.value];
   let html = '';
 
+  const renderQuestionList = (questions, startNum) => {
+    let localHtml = '';
+    let qNum = startNum;
+
+    for (const q of questions) {
+      if (!q || typeof q !== 'object' || !Array.isArray(q.options)) continue;
+      localHtml += `<div class="theory-question"><p class="theory-q-text">${qNum++}. ${q.q}</p><ul class="theory-options">`;
+      q.options.forEach((opt, i) => {
+        const correct = q.answer !== null && q.answer !== undefined && i === q.answer;
+        localHtml += `<li class="theory-option${correct ? ' theory-correct' : ''}">${opt}</li>`;
+      });
+      localHtml += `</ul></div>`;
+    }
+
+    return { html: localHtml, qNum };
+  };
+
   for (const file of files) {
     try {
       const res = await fetch(file);
@@ -296,13 +332,24 @@ async function renderTheory() {
         for (const subtopic of Object.keys(temaData)) {
           html += `<div class="theory-subtopic"><h3 class="theory-subtopic-title">${subtopic}</h3>`;
 
-          for (const q of temaData[subtopic]) {
-            html += `<div class="theory-question"><p class="theory-q-text">${qNum++}. ${q.q}</p><ul class="theory-options">`;
-            q.options.forEach((opt, i) => {
-              const correct = q.answer !== null && q.answer !== undefined && i === q.answer;
-              html += `<li class="theory-option${correct ? ' theory-correct' : ''}">${opt}</li>`;
-            });
-            html += `</ul></div>`;
+          const subtopicData = temaData[subtopic];
+
+          // Formato sin apartado: subtema -> [preguntas]
+          if (Array.isArray(subtopicData)) {
+            const rendered = renderQuestionList(subtopicData, qNum);
+            html += rendered.html;
+            qNum = rendered.qNum;
+          } else if (subtopicData && typeof subtopicData === 'object') {
+            // Formato con apartado: subtema -> apartado -> [preguntas]
+            for (const apartadoKey of Object.keys(subtopicData)) {
+              const apartadoData = subtopicData[apartadoKey];
+              if (!Array.isArray(apartadoData)) continue;
+
+              html += `<h4 class="theory-apartado-title">${apartadoKey}</h4>`;
+              const rendered = renderQuestionList(apartadoData, qNum);
+              html += rendered.html;
+              qNum = rendered.qNum;
+            }
           }
           html += `</div>`;
         }

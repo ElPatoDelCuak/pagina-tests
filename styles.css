@@ -193,6 +193,15 @@ body {
   margin-bottom: .75rem;
   line-height: 1.4;
 }
+.theory-apartado-title {
+  font-size: .82rem;
+  font-weight: 700;
+  color: #2b6cb0;
+  margin: .65rem 0 .6rem;
+  padding-left: .55rem;
+  border-left: 3px solid #90cdf4;
+  letter-spacing: .01em;
+}
 .theory-question {
   margin-bottom: .85rem;
   padding: .75rem .9rem;
