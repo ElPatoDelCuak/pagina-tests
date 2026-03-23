@@ -7,7 +7,7 @@ const CONFIG = {
   maxErrors: 4,          // fallos máximos antes de reprobar
 };
 
-const JSON_FILES = ['tema-1.json', 'tema-2.json'];
+const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json', 'tema-7.json'];
 
 // ════════════════════════════════════════════════
 
@@ -154,26 +154,19 @@ function selectAnswer(index) {
     if (remaining > 0) {
       fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — Te quedan ${remaining} fallo${remaining === 1 ? '' : 's'}.`;
     } else {
-      fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — ¡Test fallido!`;
+      fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — Ya estás suspendido, pero puedes terminar el test.`;
     }
     fb.className = 'err';
   }
 
   userAnswers.push({ q: q.q, chosen: q.options[index], correct: q.options[q.answer], ok: isCorrect });
 
-  const isFailed = errors >= CONFIG.maxErrors;
   const nextBtn = document.getElementById('btn-next');
-  nextBtn.textContent = isFailed
-    ? 'Ver resultado ✗'
-    : current + 1 < activeQuestions.length ? 'Siguiente →' : 'Ver resultado';
+  nextBtn.textContent = current + 1 < activeQuestions.length ? 'Siguiente →' : 'Ver resultado';
   nextBtn.style.display = 'block';
 }
 
 function nextQuestion() {
-  if (errors >= CONFIG.maxErrors) {
-    showResult();
-    return;
-  }
   current++;
   if (current < activeQuestions.length) {
     renderQuestion();
@@ -234,7 +227,7 @@ function showResult() {
   }
 
   let msg = '';
-  if (failed) msg = `Cometiste ${CONFIG.maxErrors} fallos. ¡Repasa y vuelve a intentarlo!`;
+  if (failed) msg = `Cometiste ${errors} fallos (límite ${CONFIG.maxErrors}). ¡Repasa y vuelve a intentarlo!`;
   else if (pct === 100) msg = '¡Perfecto! Todo correcto 🎉';
   else if (pct >= 80) msg = '¡Muy bien! Casi perfecto.';
   else if (pct >= 60) msg = 'Bien, pero puedes mejorar.';
