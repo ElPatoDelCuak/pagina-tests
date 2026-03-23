@@ -1,5 +1,5 @@
 {
-  "tema-2": {
+  "tema-3": {
     "Guías de Circulación.": [
         {
             "q": "¿Cómo se denomina el documento que ampara el traslado, sin licencia ni guía de pertenencia, entre dos lugares, de armas de las categorías 2a y 3a?",
@@ -16,6 +16,143 @@
                 "La Intervención de Armas de su residencia",
                 "La Intervención de Armas del lugar de la compra",
                 "Las dos anteriores pueden ser válidas."
+            ],
+            "answer": 1
+        },
+        {
+            "q": "¿Es cierto si afirmamos que no es preceptiva la guía de circulación para amparar una escopeta que su titular transportará de una localidad a otra, provisto de guía de pertenencia y licencia correspondiente?",
+            "options": [
+                "No en todos los casos.",
+                "Siempre que el transporte se realice dentro de la provincia.",
+                "Si."
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Quién expide la Guía de circulación para transportar un arma de fuego de la 3a categoría?",
+            "options": [
+                "El/La Comandante de Puesto de la Guardia Civil",
+                "La Intervención de Armas y Explosivos.",
+                "El/La Teniente Coronel Jefe de la Comandancia de la Guardia Civil"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "¿Por qué es necesario solicitar una guía de circulación cuando se envía a reparar una báscula de escopeta entre dos lugares distintos?",
+            "options": [
+                "Por ser un componente esencial",
+                "No es necesario",
+                "Esta prohibido"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "Cuando se envíe una escopeta sin guía de pertenencia y sin licencia, ¿qué documento amparará el traslado de una localidad a otra?",
+            "options": [
+                "La autorización del armero",
+                "El permiso del Ayuntamiento",
+                "La guía de circulación"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Qué armas de las que se citan a continuación, que se trasladan sin guía de pertenencia y sin licencia, necesitan guía de circulación para ser trasladadas entre dos localidades distintas?",
+            "options": [
+                "Las de la 3a categoría",
+                "Las de la 8a categoría",
+                "Las dos anteriores son ciertas."
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Cuándo necesitará guía de circulación una carabina de aire comprimido, que se traslade sin guía de pertenencia y sin licencia?",
+            "options": [
+                "En todos los casos",
+                "Nunca",
+                "Si se trata de una carabina cuya energía cinética del proyectil en boca exceda de 24,2 Julios"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Qué armas de las que se citan a continuación, que se trasladan sin guía de pertenencia y sin licencia, no necesitan guía de circulación para ser trasladadas entre dos localidades?",
+            "options": [
+                "Las escopetas",
+                "Las armas de fuego largas rayadas.",
+                "Las dos anteriores son falsas."
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Qué armas de las que se citan a continuación, que se trasladan sin guía de pertenencia y sin licencia, necesitan guía de circulación para su traslado entre dos localidades distintas?",
+            "options": [
+                "Las escopetas",
+                "Las armas de fuego largas rayadas.",
+                "Las dos anteriores son ciertas."
+            ],
+            "answer": 2
+        },
+        {
+            "q": "Además de la guía de circulación, ¿se necesita algún otro documento que acompañe al arma, cuando ésta se envíe a reparar a otra localidad?",
+            "options": [
+                "La guía de pertenencia",
+                "Autorización escrita por el titular",
+                "Ningún otro documento"
+            ],
+            "answer": 2
+        }
+    ],
+    "Envases y precintos de armas y piezas fundamentales.": [
+        {
+            "q": "¿Es cierto que el Reglamento de Armas contempla que las armas reglamentadas de cualquier categoría y sus componentes esenciales acabados circularán en envases debidamente acondicionados para su seguridad durante el traslado?",
+            "options": [
+                "Cierto.",
+                "Falso.",
+                "Depende del tipo de armas."
+            ],
+            "answer": 0
+        },
+        {
+            "q": "¿Se pueden enviar a reparar en un mismo envase, las escopetas junto con sus municiones?",
+            "options": [
+                "Sí, siempre que en el mismo paquete no haya más de 25 armas cortas.",
+                "Sí, siempre que en el mismo paquete no haya más de tres escopetas.",
+                "No."
+            ],
+            "answer": 2
+        },
+        {
+            "q": "¿Quién precintará los envases que contengan armas largas de cañón estriado?",
+            "options": [
+                "El Servicio Postal de Correos",
+                "Intervención de Armas de la Guardia Civil o Armero/a autorizado/a",
+                "La empresa consignataria"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "¿Cómo deberán circular las armas reglamentadas de cualquier categoría y sus componentes esenciales?",
+            "options" : [
+                "En envases debidamente acondicionados para su seguridad durante el traslado.",
+                "En su funda y en una caja de cartón.",
+                "Si va desmontada, es suficiente."
+            ],
+            "answer": 0
+        },
+        {
+            "q": "Si Vd. pretende enviar dos armas de su propiedad a reparar a Éibar, a dos fábricas diferentes, ¿puede hacerlo en un solo envase?",
+            "options": [
+                "Sí, puesto que van destinados a la misma localidad.",
+                "No pueden remitirse en el mismo envase, al corresponder a distintos destinatarios.",
+                "Pueden ir en uno o dos paquetes, por estar permitido."
+            ],
+            "answer": 1
+        },
+        {
+            "q": "¿Se debe enviar un rifle y una escopeta a reparar en un mismo envase?",
+            "options": [
+                "Sí, si van destinados al mismo armero.",
+                "No, puesto que el mismo paquete no puede contener armas de cañón estriado junto con escopetas de caza.",
+                "Sí, puesto que el paquete es adecuado para armas largas, como son el rifle y la escopeta."
             ],
             "answer": 1
         }
