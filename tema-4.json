@@ -260,6 +260,133 @@
         }
       ],
       "Categoría y número de armas que amparan las Licencias de Armas.": [
+        {
+          "q": "Quienes precisen armas utilizables para la caza mayor ¿qué licencia de armas deberán obtener?",
+          "options": [
+            "Licencia de armas \"D\".",
+            "Licencia de armas \"E\".",
+            "Licencia de armas \"F\"."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Para la tenencia de un cañon estriado adaptable a una escopeta de caza, con recámara para cartuchos metálicos, siempre que no estén clasificadas como armas de guerra, ¿qué licencia será necesaria?",
+          "options": [
+            "Licencia de armas \"E\".",
+            "Licencia de armas \"F\".",
+            "Licencia de armas \"D\"."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Qué armas ampara la licencia de armas \"D\"?",
+          "options": [
+            "Fusiles lanzacabos.",
+            "Escopetas.",
+            "Armas largas rayadas para caza mayor."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué licencia de armas debe obtenerse para llevar y usar armas de fuego largas rayadas para tiro deportivo, de calibre 5,6 milímetros (22 americano), de percusión anular, bien sean de un disparo, bien de repetición o semiautomáticas (Categoría 3ª1)?",
+          "options": [
+            "Licencia de armas \"D\".",
+            "Licencia de armas \"C\".",
+            "Licencia de armas \"E\"."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué licencia de armas debe obtenerse para poseer, llevar y usar ballestas (Categoría 7ª.2)?",
+          "options": [
+            "No precisan licencia.",
+            "Licencia de armas \"E\".",
+            "Tarjeta deportiva."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "La Licencia \"E\" autoriza a poseer, llevar y usar ¿qué categoría de armas?",
+          "options": [
+            "Armas de la categoría 3ª, 7ª 2 y 7ª 3.",
+            "Armas de la categoría 4ª y 5ª.",
+            "Armas de la categoría 3ª y 4ª."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "La licencia de armas \"E\" autoriza a poseer, llevar y usar armas de las categorías 3ª, 7ª2 y 7ª3. ¿cuántas armas se podrán poseer como máximo?",
+          "options": [
+            "Cinco armas largas rayadas.",
+            "Su número no excederá de 6 escopetas ó 6 armas largas rayadas para tiro deportivo ni 12 armas en total.",
+            "Ninguna de las anteriores."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Hasta cuantas escopetas puede ampararse con una licencia de armas \"E\"?",
+          "options": [
+            "Cuatro",
+            "Cinco.",
+            "Seis."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Hasta cuantas armas de fuego largas rayadas para tiro deportivo puede amparar una licencia de armas \"E\"?",
+          "options": [
+            "Cuatro.",
+            "Cinco.",
+            "Seis."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Cuántas carabinas de aire comprimido se pueden legalizar con una licencia de armas \"D\"?",
+          "options": [
+            "Cinco, lo mismo que los rifles.",
+            "Solamente tres.",
+            "Ninguna, las carabinas de aire o gas comprimido se legalizan con tarjetas de armas que expiden los/las Alcaldes/as."
+          ],
+          "answer": 2
+        }
+      ],
+      "Tarjeta de armas.":[],
+      "Categoría y número de armas que amparan las tarjetas de armas.": [],
+      "Tarjeta Euripea de Armas de Fuego.": [
+        {
+          "q": "¿El titular de armas de fuego cuando viaje con ellas por países miembros de la Unión Europea, deberá ser portador?",
+          "options": [
+            "De licencia de armas correspondiente al país donde viaje.",
+            "De Tarjetas de armas correspondiente al país donde viaje.",
+            "De la Tarjeta Europea de Armas."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Cuál es la vigencia de la Tarjeta Europea de Armas?",
+          "options": [
+            "Dos años.",
+            "Tres años.",
+            "Cinco años."
+          ],
+          "answer": 2
+        }
+      ],
+      "Categoría y número de armas que amparan las tarjetas Europeas de Armas de fuego.": [
+        {
+          "q": "¿Qué armas figurarán en la Tarjeta Europea de Armas?",
+          "options": [
+            "Solo armas cortas.",
+            "Las que lleve o utilice su titular.",
+            "Armas amparadas con guía especial"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "CONDICIONES GENERALES PARA LA OBTENCIÓN DE LICENCIAS Y TARJETAS EUROPEAS DE ARMAS DE FUEGO": {
+      "Quénes pueden ser los titulares de las Licencias de Armas, Autoricaciones y de las Tarjetas Europeas - qué requisitos se necesitan para ello - cuándo caducan y qué ámbito de validez tienen.": [
         
       ]
     }
