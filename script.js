@@ -7,7 +7,7 @@ const CONFIG = {
   maxErrors: 4,          // fallos máximos antes de reprobar
 };
 
-const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json', 'tema-7.json'];
+const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json',  'tema-4.json', 'tema-7.json'];
 
 // ════════════════════════════════════════════════
 

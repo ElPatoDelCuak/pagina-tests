@@ -2,6 +2,264 @@
   "tema-4": {
     "DOCUMENTACIÓN PARA LA TENENCIA Y USO DE ARMAS": {
       "Tipos de Licencias de Armas.": [
+        {
+          "q": "¿Un rifle automático puede ampararse en una Licencia de Armas \"D\"?",
+          "options": [
+              "Sí.",
+              "No por ser arma de guerra prohibida a particulares.",
+              "Sí, si emplea munición de caza."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Para la expedición de una licencia de armas, ¿qué edad mínima tendrá el peticionario?",
+          "options": [
+            "14 años.",
+            "16 años.",
+            "18 años."
+          ],
+          "answer": 2 
+        },
+        {
+          "q": "¿Cuantas licencias de armas \"D\" se podrán poseer?",
+          "options": [
+            "Dependerá del número de armas que posean.",
+            "Una.",
+            "Dos."
+          ],
+          "answer": 1 
+        },
+        {
+          "q": "¿Qué documentos para la utilización de un arma larga rayada para caza mayor, portará su titular cuando ejerza la práctica de la caza?",
+          "options": [
+            "Licencia \"D\" y guía del arma que utilice.",
+            "Tarjeta de armas.",
+            "Solo la guía de pertenencia."
+          ],
+          "answer": 0 
+        },
+        {
+          "q": "¿Se puede expedir una licencia de armas a un español residente en Francia?",
+          "options": [
+            "Sí.",
+            "No.",
+            "Si, por ser un país de la U.E."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Podría utilizar un titular de licencia de armas \"E\" una escopeta de su propiedad inscrita en un Libro-Registro de coleccionista, para ejercer la caza?",
+          "options": [
+            "No, porque está prohibido su uso.",
+            "Si porque el/la titular de la licencia y el libro-registro es la misma persona.",
+            "No porque está prohibido su circulación."
+          ],
+          "answer": 0 
+        },
+        {
+          "q": "¿Qué es necesario en el territorio español para poseer una escopeta de caza?",
+          "options": [
+            "Tarjeta de armas.",
+            "Un permiso de armas.",
+            "Licencia de armas tipo \"E\"."
+          ],
+          "answer": 2 
+        },
+        {
+          "q": "¿Quiénes pueden tener y usar alzas o miras telescópicas adaptables a las armas de caza mayor?",
+          "options": [
+            "Las puede tener y usar cualquiera, pues no se trata de un arma.",
+            "Necesitan una autorización especial de la Intervención de Armas e la Guardia Civil.",
+            "Las personas que estén en posesión de licencia de armas tipo \"D\"."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Qué edad mínima debe tener una persona para poder poseer un rifle de caza mayor y qué licencia necesita?",
+          "options": [
+            "Debe tener como mínimo 18 años y estar en posesión de licencia de armas tipo \"D\".",
+            "Tener entre 16 y 18 años y estar en posesión de autorización especial de uso de armas para menores.",
+            "Tener como mínimo 16 años, tener licencia de armas tipo \"D\" y que la Intervención de Armas le autorice."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "En un arma combinada (escopeta y rifle de caza), ¿cómo se documentará dicha arma?.",
+          "options": [
+            "Dos, una para la escopeta y otra para el rifle.",
+            "Dos licenciasen un modelo de licencia especial.",
+            "Se documentará con una guía de pertenencia, teniendo en cuenta el arma de mayor peligrosidad."
+          ],
+          "answer": 2 
+        },
+        {
+          "q": "El/La propietaro/a de una escopeta y un arma larga rayada para caza mayor, ¿qué licencias de armas deberá tener?",
+          "options": [
+            "Licencia de armas \"D\" y \"E\".",
+            "Solo licencia \"D\" pues ampara un arma de mayor peligrosidad.",
+            "Licencia de armas \"D\" o \"E\", es indiferente."
+          ],
+          "answer": 0
+        }
+      ],
+      "Autorizaciones  temporales  de  uso  de  armas  en  el  caso  de  renovación  y  en  el  caso  de  pérdida, destrucción, robo o extravío.": [
+        {
+          "q": "¿Qué documento se entrega al Interventor de Armas, por pérdida, destrucción, robo o sustracción de un arma de la categoría 2ª y 3ª?",
+          "options": [
+            "Guiá de pertenencia.",
+            "Licencia de armas correspondiente.",
+            "Tarjeta federativa."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué documento podrá solicitarse en la Intervencion de Armas, ante la pérdida, destrucción, robo o sustracción de la licencia de armas?",
+          "options" : [
+            "Guía de pertenencia.",
+            "Guía de circulación.",
+            "Autorización temporal de uso de armas."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Cuando las licencias de armas estén próximas a caducar, ¿qué documento podrán expedir los/las Interventores/ras de Armas a los/las peticionarios/as?",
+          "options": [
+            "Guía de pertenencia.",
+            "Autorización temporal de uso de armas.",
+            "Autorización temporal de uso de armas."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Qué es una autorización temporal de uso de armas?",
+          "options": [
+            "Es una autorización que se otorga a cualquier persona mayor de edad para poder cazar quince días.",
+            "Es una autorización que se concede a las personas con licencias de armas caducadas para poder cazar.",
+            "Son autorizaciones que expiden los Interventores de Armas a las personas con licencias de armas próximas a caducar, con un periódo de vigencia de tres meses y solamente para el uso de las armas."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Los titulares de licencias de armas próximas a caducar, cuando éstos/as solicitan su nueva concesión, las Intervenciones de Armas y Explosivos podrán expedir a los solicitantes autorizaciones temporales de uso de dichas armas, ¿qué plazo de validez tendrán dichas autorizaciones?",
+          "options": [
+            "Un mes.",
+            "Dos meses.",
+            "Tres meses."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Quien expide la autorización temporal de uso de armas a los titulares de licencias de armas próximas a caducar, cuando éstos solicitan su nueva concesión?",
+          "options": [
+            "El/La Alcalde/sa del Ayuntamiento.",
+            "El/La Interventor/a de Armas y Explosivos.",
+            "El/La Armero/a autorizado/a."
+          ],
+          "answer": 1
+        }
+      ],
+      "Guías.": [
+        {
+          "q": "Para la tenencia de armas de la categoría 2ª.2 -Armas de fuego largas rayadas para caza mayor, ¿con qué documento habrá de estar documentada cada arma?",
+          "options": [
+            "Licencia de caza.",
+            "Con guía de pertenencia.",
+            "Tarjeta deportiva."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Para la tenencia de armas de la categoría  3ª.2 -Escopetas y demás armas de fuego largas de ánima lisa ¿con qué documento habrá de estar documentada cada arma?",
+          "options": [
+            "Licencia de armas \"D\".",
+            "Guía de circulación.",
+            "Con guía de pertenencia."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Para la tenencia de armas de la categoría  3ª.3 -Armas accionadas por aire u otro gas comprimido, siempre que la energía cinética del proyectil en boca exceda de 24,2 julios, ¿con qué documento habrá de estar documentada cada arma?",
+          "options": [
+            "Con guía de pertenencia.",
+            "Tarjeta de armas.",
+            "Guía especial."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Para  la  tenencia  de  armas  de  la  categoría,  7ª.2  -Ballestas-  ¿con  qué  documento  habrá  de  estar documentada cada arma?",
+          "options": [
+            "Tarjeta deportiva.",
+            "Con guía de pertenencia.",
+            "Licencia federativa."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Para la tenencia de armas de la categoría  7ª.3 -Armas para lanzar cabos- ¿con qué documento habrá de estar documentada cada arma?",
+          "options": [
+            "Certificado de la Comandancia de marina.",
+            "No es necesario ningún documento.",
+            "Con guía de pertenencia."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "¿Cuántas armas irán reseñadas en una guía de pertenencia?",
+          "options": [
+            "Una.",
+            "Dos.",
+            "Ninguna."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿En qué casos acompañará la guía de pertenencia al arma?",
+          "options": [
+            "No es necesario.",
+            "Solo cuando se deposite el arma.",
+            "En caso de uso, depósito y transporte."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Señale, entre las siguientes, el arma exceptuada de estar amparada con guía de pertenencia:",
+          "options": [
+            "Escopetas.",
+            "Pistola.",
+            "Arcos."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Señale, entre las siguientes, el arma exceptuada de estar amparada con guía de pertenencia:",
+          "options": [
+            "Pistola lanza bengalas.",
+            "Fúsil lanzacabos.",
+            "Fúsil de inyección anestésica."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántas escopetas de caza se pueden legalizar con una sola guía de pertenencia?",
+          "options": [
+            "Solamente se puede legalizar una escopeta.",
+            "Más de una escopeta si es del mismo titular.",
+            "Con una guía de varios cuerpos, se pueden legalizar escopetas y rifles a la vez."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "En una Guía de Pertenencia, aparte del D.N.I., los datos personales del propietario del arma, así como los de la Licencia, ¿qué otros datos deben figurar?.",
+          "options": [
+            "El nombre del fabricante.",
+            "La provincia donde fue fabricada el arma.",
+            "La reseña completa del arma."
+          ],
+          "answer": 2
+        }
+      ],
+      "Categoría y número de armas que amparan las Licencias de Armas.": [
         
       ]
     }
