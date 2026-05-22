@@ -7,13 +7,13 @@ const CONFIG = {
   maxErrors: 4,          // fallos máximos antes de reprobar
 };
 
-const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json',  'tema-4.json', 'tema-7.json'];
+const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json', 'tema-5.json', 'tema-4.json', 'tema-7.json'];
 
 // ════════════════════════════════════════════════
 
 let current = 0;
-let score   = 0;
-let errors  = 0;
+let score = 0;
+let errors = 0;
 let answered = false;
 let activeQuestions = [];
 let userAnswers = [];
@@ -74,7 +74,7 @@ async function loadQuestions(files) {
 
 async function startTest() {
   const select = document.getElementById('tema-select');
-  const errEl  = document.getElementById('load-error');
+  const errEl = document.getElementById('load-error');
   errEl.style.display = 'none';
 
   const files = select.value === 'all' ? JSON_FILES : [select.value];
@@ -153,7 +153,7 @@ function selectAnswer(index) {
   if (answered) return;
   answered = true;
 
-  const q    = activeQuestions[current];
+  const q = activeQuestions[current];
   const btns = document.querySelectorAll('.option-btn');
   btns.forEach(b => b.disabled = true);
 
@@ -205,7 +205,7 @@ function saveHistory(entry) {
 function renderHistory() {
   const hist = JSON.parse(localStorage.getItem('test-history') || '[]');
   const section = document.getElementById('history-section');
-  const list    = document.getElementById('history-list');
+  const list = document.getElementById('history-list');
   if (hist.length === 0) { section.classList.add('hidden'); return; }
   section.classList.remove('hidden');
   list.innerHTML = '';
@@ -234,7 +234,7 @@ function showResult() {
   const pct = Math.round((score / answeredCount) * 100);
 
   document.getElementById('score-number').textContent = `${score}/${answeredCount}`;
-  document.getElementById('score-label').textContent  = `${pct}%`;
+  document.getElementById('score-label').textContent = `${pct}%`;
 
   const badge = document.getElementById('result-badge');
   if (failed) {
@@ -268,7 +268,7 @@ function showResult() {
       (a.ok
         ? `<span class="ri-correct">✓ ${a.chosen}</span>`
         : `<span class="ri-incorrect">✗ Tu respuesta: ${a.chosen}</span>` +
-          `<br><span class="ri-correct">✓ Correcta: ${a.correct}</span>`);
+        `<br><span class="ri-correct">✓ Correcta: ${a.correct}</span>`);
     reviewEl.appendChild(div);
   });
 
@@ -293,7 +293,7 @@ async function openTheory() {
 }
 
 async function renderTheory() {
-  const select    = document.getElementById('theory-select');
+  const select = document.getElementById('theory-select');
   const container = document.getElementById('theory-content');
   container.innerHTML = '<p style="color:#718096;text-align:center;">Cargando...</p>';
 
