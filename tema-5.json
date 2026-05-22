@@ -1,0 +1,137 @@
+{
+    "tema-5": {
+        "RÉGIMEN SANCIONADOR.": {
+            "Delitos e infracciones administrativas": [
+                {
+                    "number": 1,
+                    "q": "En materia de armas, los hechos pueden ser constitutivos de:",
+                    "options": [
+                        "Infracciones penales e infracciones administrativas.",
+                        "Infracciones penales.",
+                        "Infracciones muy graves, graves y leves."
+                    ],
+                    "answer": 0
+                }
+            ],
+            "Clases de infracciones administrativas.": [
+                {
+                    "number": 2,
+                    "q": "En materia de armas, y de las clases de infracciones administrativas que se expresan, Indicar la proposición correcta.",
+                    "options": [
+                        "Graves, menos graves y leves.",
+                        "Muy Graves, graves y leves.",
+                        "Graves y leves."
+                    ],
+                    "answer": 1
+                }
+            ],
+            "Competencias para imponer sanciones administrativas.": [
+                {
+                    "number": 3,
+                    "q": "¿Quién es competente para imponer sanciones al Reglamento de Armas?",
+                    "options": [
+                        "El/La Delegado/a del Gobierno y el/la director/a General de la Guardia Civil.",
+                        "El/La alacalde/sa",
+                        "Las dos anteriores son correctas."
+                    ],
+                    "answer": 2
+                },
+                {
+                    "number": 4,
+                    "q": "De las que se citan ¿Qué autoridades son competentes para ordenar la instrucción de un procedimiento sancionador en materia de armas?",
+                    "options": [
+                        "Interventor/a de Armas y Explosivos.",
+                        "Director/a General de la Guardia Civil, Delegado/a del Gobierno y los/las Alcaldes/sas.",
+                        "Delegado/a de Hacienda."
+                    ],
+                    "answer": 1
+                }
+            ],
+            "Prescripción de infracciones administrativas y sanciones.": [
+                {
+                    "number": 5,
+                    "q": "¿Cuándo prescribirán las infracciones administrativas leves?",
+                    "options": [
+                        "A los 3 meses.",
+                        "Al año.",
+                        "A los 2 años."
+                    ],
+                    "answer": 0
+                },
+                {
+                    "number": 6,
+                    "q": "¿Cuándo prescribirán las infracciones administrativas graves?",
+                    "options": [
+                        "A los 3 meses.",
+                        "Al año.",
+                        "A los 2 años."
+                    ],
+                    "answer": 1
+                },
+                {
+                    "number": 7,
+                    "q": "¿Cuándo prescribirán las infracciones administrativas muy graves?",
+                    "options": [
+                        "A los 3 meses.",
+                        "Al año.",
+                        "A los 2 años."
+                    ],
+                    "answer": 2
+                },
+                {
+                    "number": 8,
+                    "q": "¿Cuándo prescribirán las sanciones leves?",
+                    "options": [
+                        "Al año.",
+                        "A los 2 años",
+                        "A los 4 años."
+                    ],
+                    "answer": 0
+                },
+                {
+                    "number": 9,
+                    "q": "¿Cuándo prescribirán las sanciones graves?",
+                    "options": [
+                        "Al año.",
+                        "A los 2 años",
+                        "A los 4 años."
+                    ],
+                    "answer": 1
+                },
+                {
+                    "number": 10,
+                    "q": "¿Cuándo prescribirán las sanciones muy graves?",
+                    "options": [
+                        "Al año.",
+                        "A los 2 años",
+                        "A los 4 años."
+                    ],
+                    "answer": 2
+                },
+                {
+                    "number": 11,
+                    "q": "¿Las sanciones impuestas en materia de armas, ¿Cuándo serán ejecutivas?",
+                    "options": [
+                        "Cuando las resoluciones adquieran firmeza en vía administrativa.",
+                        "A los diez días de notificar la resolución al interesado.",
+                        "A los 30 días de notificar la resolución al interesado."
+                    ],
+                    "answer": 0
+                },
+                {
+                    "number": 12,
+                    "q": "¿Se pueden imponer sanciones penales y administrativas por un mismo hecho?",
+                    "options": [
+                        "Sí.",
+                        "En ningún caso.",
+                        "Dependerá de la Autoridad Judicial."
+                    ],
+                    "answer": 1
+                }
+            ]
+        },
+        "INFRACCIONES MUY GRAVES, GRAVES Y LEVES.": {
+            "Hechos constitutivos de infracción muy grave en relación con las que puedan cometerse.": {}
+        }
+    }
+}

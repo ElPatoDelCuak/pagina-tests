@@ -306,7 +306,9 @@ async function renderTheory() {
 
     for (const q of questions) {
       if (!q || typeof q !== 'object' || !Array.isArray(q.options)) continue;
-      localHtml += `<div class="theory-question"><p class="theory-q-text">${qNum++}. ${q.q}</p><ul class="theory-options">`;
+      const displayNum = (q.number !== undefined && q.number !== null) ? q.number : qNum;
+      qNum = (typeof displayNum === 'number') ? displayNum + 1 : qNum + 1;
+      localHtml += `<div class="theory-question"><p class="theory-q-text">${displayNum}. ${q.q}</p><ul class="theory-options">`;
       q.options.forEach((opt, i) => {
         const correct = q.answer !== null && q.answer !== undefined && i === q.answer;
         localHtml += `<li class="theory-option${correct ? ' theory-correct' : ''}">${opt}</li>`;
