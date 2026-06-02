@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,88 +8,96 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
+
 <body>
-<div id="app">
+  <div id="app">
 
-  <!-- INICIO -->
-  <div id="screen-start">
-    <h1 id="test-title">Test Licencia de Armas</h1>
-    <p id="test-description">Selecciona el tema y responde 20 preguntas aleatorias.</p>
+    <!-- INICIO -->
+    <div id="screen-start">
+      <h1 id="test-title">Test Licencia de Armas</h1>
+      <p id="test-description">Selecciona el tema y responde 20 preguntas aleatorias.</p>
 
-    <div style="margin-bottom:1.5rem;">
-      <label for="tema-select" style="display:block;font-weight:600;margin-bottom:.5rem;color:#2d3748;">Tema:</label>
-      <select id="tema-select" style="width:100%;padding:.65rem 1rem;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;color:#2d3748;background:#f7fafc;">
-        <option value="all">Todos los temas</option>
-        <option value="tema-1.json">Tema 1 – Funcionamiento, piezas y seguridad</option>
-        <option value="tema-2.json">Tema 2 – Clasificación legal y armas prohibidas</option>
-        <option value="tema-3.json">Tema 3 – Circulación, revista y transferencias</option>
-        <option value="tema-4.json">Tema 4 – Documentación, licencias y tarjetas de armas</option>
-        <option value="tema-5.json">Tema 5 – EN CONSTRUCCIÓN</option>
-        <option value="tema-6.json">Tema 6 – EN CONSTRUCCIÓN</option>
-        <option value="tema-7.json">Tema 7 – Armas de colección y munición histórica</option>
-      </select>
+      <div style="margin-bottom:1.5rem;">
+        <label for="tema-select" style="display:block;font-weight:600;margin-bottom:.5rem;color:#2d3748;">Tema:</label>
+        <select id="tema-select"
+          style="width:100%;padding:.65rem 1rem;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;color:#2d3748;background:#f7fafc;">
+          <option value="all">Todos los temas</option>
+          <option value="tema-1.json">Tema 1 – Funcionamiento, piezas y seguridad</option>
+          <option value="tema-2.json">Tema 2 – Clasificación legal y armas prohibidas</option>
+          <option value="tema-3.json">Tema 3 – Circulación, revista y transferencias</option>
+          <option value="tema-4.json">Tema 4 – Documentación, licencias y tarjetas de armas</option>
+          <option value="tema-5.json">Tema 5 – Reparación, Prueba y Depósito de Armas</option>
+          <option value="tema-6.json">Tema 6 – Armas de Colección, Definiciones e Historia</option>
+          <option value="tema-7.json">Tema 7 – Armas de colección y munición histórica</option>
+        </select>
+      </div>
+
+      <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+        <button class="btn" onclick="startTest()">Comenzar test</button>
+        <button class="btn secondary" onclick="openTheory()">📖 Repasar teoría</button>
+      </div>
+      <p id="load-error" style="color:#e53e3e;margin-top:1rem;display:none;"></p>
+
+      <div id="history-section" class="hidden">
+        <h3>Historial <button class="btn secondary" style="font-size:.75rem;padding:.25rem .6rem;"
+            onclick="clearHistory()">Borrar</button></h3>
+        <div id="history-list"></div>
+      </div>
     </div>
 
-    <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
-      <button class="btn" onclick="startTest()">Comenzar test</button>
-      <button class="btn secondary" onclick="openTheory()">📖 Repasar teoría</button>
+    <!-- TEORÍA -->
+    <div id="screen-theory" class="hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;">
+        <h2 style="font-size:1.3rem;color:#1a202c;">📖 Repasar Teoría</h2>
+        <button class="btn secondary" style="padding:.45rem 1rem;font-size:.9rem;" onclick="show('screen-start')">←
+          Volver</button>
+      </div>
+      <div style="margin-bottom:1.25rem;">
+        <select id="theory-select"
+          style="width:100%;padding:.65rem 1rem;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;color:#2d3748;background:#f7fafc;"
+          onchange="renderTheory()">
+          <option value="all">Todos los temas</option>
+          <option value="tema-1.json">Tema 1 – Funcionamiento, piezas y seguridad</option>
+          <option value="tema-2.json">Tema 2 – Clasificación legal y armas prohibidas</option>
+          <option value="tema-3.json">Tema 3 – Circulación, revista y transferencias</option>
+          <option value="tema-4.json">Tema 4 – Documentación, licencias y tarjetas de armas</option>
+          <option value="tema-5.json">Tema 5 – Reparación, Prueba y Depósito de Armas</option>
+          <option value="tema-6.json">Tema 6 – Armas de Colección, Definiciones e Historia</option>
+          <option value="tema-7.json">Tema 7 – Armas de colección y munición histórica</option>
+        </select>
+      </div>
+      <div id="theory-content"></div>
     </div>
-    <p id="load-error" style="color:#e53e3e;margin-top:1rem;display:none;"></p>
 
-    <div id="history-section" class="hidden">
-      <h3>Historial <button class="btn secondary" style="font-size:.75rem;padding:.25rem .6rem;" onclick="clearHistory()">Borrar</button></h3>
-      <div id="history-list"></div>
+    <!-- PREGUNTAS -->
+    <div id="screen-quiz" class="hidden">
+      <div id="progress-bar-wrap">
+        <div id="progress-bar"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.25rem;">
+        <div id="question-counter"></div>
+        <div id="error-counter"></div>
+      </div>
+      <div id="question-text"></div>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <button id="btn-next" class="btn" onclick="nextQuestion()">Siguiente →</button>
     </div>
+
+    <!-- RESULTADO -->
+    <div id="screen-result" class="hidden">
+      <div id="score-circle">
+        <span id="score-number"></span>
+        <span id="score-label"></span>
+      </div>
+      <p id="result-badge" style="font-size:1.3rem;font-weight:700;margin-bottom:.5rem;"></p>
+      <p id="result-msg"></p>
+      <div id="review"></div>
+      <button class="btn" onclick="restartTest()">Reintentar</button>
+    </div>
+
   </div>
-
-  <!-- TEORÍA -->
-  <div id="screen-theory" class="hidden">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;">
-      <h2 style="font-size:1.3rem;color:#1a202c;">📖 Repasar Teoría</h2>
-      <button class="btn secondary" style="padding:.45rem 1rem;font-size:.9rem;" onclick="show('screen-start')">← Volver</button>
-    </div>
-    <div style="margin-bottom:1.25rem;">
-      <select id="theory-select" style="width:100%;padding:.65rem 1rem;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;color:#2d3748;background:#f7fafc;" onchange="renderTheory()">
-        <option value="all">Todos los temas</option>
-        <option value="tema-1.json">Tema 1 – Funcionamiento, piezas y seguridad</option>
-        <option value="tema-2.json">Tema 2 – Clasificación legal y armas prohibidas</option>
-        <option value="tema-3.json">Tema 3 – Circulación, revista y transferencias</option>
-        <option value="tema-4.json">Tema 4 – Documentación, licencias y tarjetas de armas</option>
-        <option value="tema-5.json">Tema 5 – EN CONSTRUCCIÓN</option>
-        <option value="tema-6.json">Tema 6 – EN CONSTRUCCIÓN</option>
-        <option value="tema-7.json">Tema 7 – Armas de colección y munición histórica</option>
-      </select>
-    </div>
-    <div id="theory-content"></div>
-  </div>
-
-  <!-- PREGUNTAS -->
-  <div id="screen-quiz" class="hidden">
-    <div id="progress-bar-wrap"><div id="progress-bar"></div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.25rem;">
-      <div id="question-counter"></div>
-      <div id="error-counter"></div>
-    </div>
-    <div id="question-text"></div>
-    <div id="options"></div>
-    <div id="feedback"></div>
-    <button id="btn-next" class="btn" onclick="nextQuestion()">Siguiente →</button>
-  </div>
-
-  <!-- RESULTADO -->
-  <div id="screen-result" class="hidden">
-    <div id="score-circle">
-      <span id="score-number"></span>
-      <span id="score-label"></span>
-    </div>
-    <p id="result-badge" style="font-size:1.3rem;font-weight:700;margin-bottom:.5rem;"></p>
-    <p id="result-msg"></p>
-    <div id="review"></div>
-    <button class="btn" onclick="restartTest()">Reintentar</button>
-  </div>
-
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
 
+</html>
