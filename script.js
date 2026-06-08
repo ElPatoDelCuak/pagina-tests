@@ -4,7 +4,7 @@
 const CONFIG = {
   numQuestions: 20,      // preguntas por test
   shuffleOptions: true,  // barajar opciones
-  maxErrors: 4,          // fallos máximos antes de reprobar
+  maxErrors: 4,          // fallos máximos permitidos (4 fallos aprueba, 5 suspende)
 };
 
 const JSON_FILES = ['tema-1.json', 'tema-2.json', 'tema-3.json', 'tema-4.json', 'tema-5.json', 'tema-6.json', 'tema-7.json'];
@@ -170,8 +170,12 @@ function selectAnswer(index) {
     errors++;
     renderErrorCounter();
     const remaining = CONFIG.maxErrors - errors;
-    if (remaining > 0) {
-      fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — Te quedan ${remaining} fallo${remaining === 1 ? '' : 's'}.`;
+    if (remaining >= 0) {
+      if (remaining > 0) {
+        fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — Te quedan ${remaining} fallo${remaining === 1 ? '' : 's'}.`;
+      } else {
+        fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — No puedes cometer más fallos o suspenderás.`;
+      }
     } else {
       fb.textContent = `✗ Incorrecto. Correcta: "${q.options[q.answer]}" — Ya estás suspendido, pero puedes terminar el test.`;
     }
@@ -229,7 +233,7 @@ window.addEventListener('DOMContentLoaded', renderHistory);
 
 function showResult() {
   document.getElementById('progress-bar').style.width = '100%';
-  const failed = errors >= CONFIG.maxErrors;
+  const failed = errors > CONFIG.maxErrors;
   const answeredCount = userAnswers.length;
   const pct = Math.round((score / answeredCount) * 100);
 
